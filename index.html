@@ -508,13 +508,13 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="input-field">
-            <label class="modal-label" for="username">Name</label>
+            <label class="modal-label" for="user-name">Name</label>
             <div class="input-wrap">
               <input
                 type="text"
-                name="username"
+                name="user-name"
                 class="form-input"
-                id="username"
+                id="user-name"
               />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-user"></use>
@@ -550,31 +550,33 @@
             </div>
           </div>
           <div class="input-field">
-            <label class="modal-label" for="modal-area">Comment</label>
-            <div class="input-wrap">
-              <textarea
-                name="modal-area"
-                id="modal-area"
-                class="area-text"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="area-text"
+              placeholder="Text input"
+            ></textarea>
           </div>
-          <input
-            type="checkbox"
-            name="policy"
-            id="policy"
-            class="modal-check visually-hidden"
-            value="true"
-          />
-          <label for="policy" class="policy-label"
-            ><span class="policy-item">
-              <svg class="check-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-Checkbox"></use></svg></span
-            >I accept the terms and conditions of the
-            <a href="" class="link-policy">Privacy Policy</a></label
-          >
-          <button type="submit" class="btn-sbmt">Send</button>
+          <div class="checkbox-field">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              class="modal-check visually-hidden"
+              value="true"
+            />
+            <label for="user-privacy" class="policy-label"
+              ><span class="policy-item">
+                <svg class="check-icon" width="10" height="8">
+                  <use
+                    href="./images/icons.svg#icon-Checkbox"
+                  ></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="" class="link-policy">Privacy Policy</a></label
+            >
+            <button type="submit" class="btn-sbmt">Send</button>
+          </div>
         </form>
       </div>
     </div>
